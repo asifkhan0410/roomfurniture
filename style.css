@@ -114,6 +114,7 @@ li:hover{
 @media only screen and (max-width:376px){
     .app{
         height: auto;
+        z-index: 1;
     }
     .header{
         display: none;
@@ -125,6 +126,7 @@ li:hover{
     }
     .nav-open{
         display: none;
+        z-index: 2;
         position: absolute;
         background: white;
         height: 100px;

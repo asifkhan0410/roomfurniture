@@ -10,6 +10,8 @@ const navOpen =document.querySelector('.navopen');
 const navClose =document.querySelector('.navclose');
 const navOpenbox =document.querySelector('.nav-open');
 
+const App =document.querySelector('.app')
+
 const images = ['desktop-image-hero-2.jpg','desktop-image-hero-3.jpg','desktop-image-hero-1.jpg'];
 const mobileimages = ['mobile-image-hero-2.jpg','mobile-image-hero-3.jpg','mobile-image-hero-1.jpg'];
 const header = ['We are available all across the globe','Manufactured with the best materials','Discover innovative ways to decorate'];
@@ -44,9 +46,11 @@ function handleChange(){
 afterButton.addEventListener('click', handleChange);
 
 navOpen.addEventListener('click', ()=>{
-   navOpenbox.style.display='flex' 
+   navOpenbox.style.display='flex'
+   App.style.opacity = '0.3' 
 })
 
 navClose.addEventListener('click', ()=>{
     navOpenbox.style.display='none'
+    App.style.opacity = '1'
 })
