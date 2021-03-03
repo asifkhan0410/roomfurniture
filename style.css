@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css2?family=Spartan);
+
+body{
+    margin:0px;
+    font-family: 'Spartan', sans-serif;
+}
+
+.app{
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    flex-direction: column;
+}
+.upper__app{
+    display: flex;
+    flex: 0.6;
+}
+.upper__appleft{
+    flex: 0.6;
+    transition: all 0.1s ease-in-out;
+    background-image: url(./images/desktop-image-hero-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    padding: 30px;
+}
+ul{
+    display: flex;
+    margin: 0px 50px;
+}
+li{
+    color: white;
+    display: block;
+    margin: 0px 20px;
+    padding: 0px 2px 6px;
+    transition: all 0.1s ease-in-out;
+}
+li >a{
+    text-decoration: none;
+    color: inherit;
+}
+li:hover{
+    border-bottom: 2px solid white;
+    border-radius: 2px;
+    transform: scale(1.1);
+}
+.upper__appright{flex: 0.4;}
+.upper__appright > button{
+    outline: none;
+    border: none;
+    padding: 12px 20px;
+    background-color: black;
+}
+.upper__appright>button:hover{
+    background-color: hsl(0, 0%, 27%);
+}
+.after{
+    margin-left: -4px;
+}
+.upper__apprightbody{
+    padding: 56.7px 72px;
+    height: 38vh;
+}
+.upper__apprightbody>h1{
+    FONT-SIZE: 2.2rem;
+    font-weight: 700;
+    transition: all 0.1s ease-in-out;
+    letter-spacing: 1px;
+}
+.upper__apprightbody>p{
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.1s ease-in-out;
+    color: hsl(0, 0%, 63%);
+    letter-spacing: 0.3px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.upper__apprightbody>a{
+    text-decoration: none;
+    color: hsl(0, 0%, 63%);
+    letter-spacing: 7px;
+}
+.lower__app{
+    display: flex;
+    flex: 0.4;
+}
+.lower__appbody{
+    padding: 47px 100px;
+}
+.lower__appbody>h2{
+    FONT-SIZE: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.lower__appbody >p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 63%);
+    letter-spacing: 0.3px;
+    text-align: justify;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width:376px){
+    
+}
