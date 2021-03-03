@@ -108,8 +108,17 @@ li:hover{
     letter-spacing: 0.3px;
     text-align: justify;
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 11px; 
+    text-align: center;
+ }
+.attribution a { text-decoration: none;padding: 3px 6px 0px; color: hsl(0, 0%, 63%); }
 
 @media only screen and (max-width:376px){
     .app{
