@@ -26,6 +26,12 @@ body{
     display: flex;
     padding: 30px;
 }
+.header-mobile{
+    display: none;
+}
+.nav-open{
+    display: none;
+}
 ul{
     display: flex;
     margin: 0px 50px;
@@ -106,5 +112,62 @@ li:hover{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media only screen and (max-width:376px){
-    
+    .app{
+        height: auto;
+    }
+    .header{
+        display: none;
+    }
+    .header-mobile{
+        display: flex;
+        padding: 30px;
+        align-items: center;
+    }
+    .nav-open{
+        display: none;
+        position: absolute;
+        background: white;
+        height: 100px;
+        align-items: center;
+    }
+    .nav-open >img{
+        margin: 0px 23px;
+    }
+    .nav-open>li{
+        margin: auto 10px;
+        padding-top:10px;
+        color: black;
+        font-weight: 700;
+    }
+   .upper__app{
+       flex-direction: column;
+   }
+   .upper__appleft{
+    flex: auto;
+    height:360px;
+   }
+   .upper__apprightbody{
+    padding: 40px 30px;
+    margin-bottom: -38px;
+    height: auto;
+   }
+   .upper__apprightbody>h1{font-size: 1.694rem;}
+   .upper__apprightbody>p{font-size: 0.8rem;}
+   .upper__apprightbody>a{ font-size: 0.9rem;}
+   
+   .upper__appright >button{
+    transform: translate(284px, -345px);
+    padding: 5px 12px;
+   }
+    .lower__app{
+       flex-direction: column;
+   } 
+   .lower__appbody{
+    padding: 40px 20px;
+   }
+
+   .lower__appbody>p{
+       font-size: 0.8rem;
+    letter-spacing: 0.1px;
+   }
 }
