@@ -141,7 +141,7 @@ li:hover{
         height: 100px;
         align-items: center;
     }
-    .nav-open >img{
+    .nav-open >li >img{
         margin: 0px 23px;
     }
     .nav-open>li{
